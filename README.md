@@ -1,1 +1,3 @@
 # demo_part2
+
+a register page where you will enter your name,email,your role nd password and register and if you have account you will click on already have an account with us and log in,ten you will find a login page after you hhave registered where you will be logging using using your email role and password	,Then on dashboard page you will be entering the module name,hours worked hour per rate on module,description of the module and you upload the file then you will submit your claims After submitting your claims, you will then see the things you have submitted and track your status either its approved or pending Then on approved claims is where the programme coordinator will reject or approve your claims 
