@@ -1,0 +1,77 @@
+﻿@model demo_part2.Models.check_login
+
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<style>
+    body {
+        font-family: Courier New;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+        margin: 0;
+    }
+
+    .text-center {
+        background-color: black;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: pink;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    option {
+        padding: 10px;
+    }
+</style>
+
+<div class="text-center">
+    <form asp-action="login_user" method="post">
+        <label>Email</label>
+        <input type="email" asp-for="email" required />
+        <br />
+        <label>Select role</label>
+        <select asp-for="role">
+            <option selected disabled>select role here</option>
+            <option value="lecture">Lecture</option>
+            <option value="pm">PM</option>
+        </select>
+        <br />
+        <label>Password</label>
+        <input type="password" asp-for="password" required />
+        <br />
+        <input type="submit" value="Login" />
+    </form>
+</div>
